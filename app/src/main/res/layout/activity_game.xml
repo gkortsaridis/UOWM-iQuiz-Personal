@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/carbon"
+    tools:context="gr.gkortsaridis.iquizpersonal.GameActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:id="@+id/scrollView"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="The Question"
+                android:textColor="#ffffff"
+                android:id="@+id/theQuestionTxt"
+                android:scrollbarAlwaysDrawVerticalTrack="true"/>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Ερώτηση: ΧΧ/ΥΥ"
+                android:textColor="#ffffff"
+                android:id="@+id/questionCountTxt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Απομένουν: XX sec"
+                android:textColor="#ffffff"
+                android:id="@+id/remainingSecondsTxt"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Next Question"
+                android:background="@drawable/button_red"
+                android:id="@+id/nextQuestBtn"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="End Quiz"
+                android:background="@drawable/button_red"
+                android:id="@+id/endQuizBtn"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:text="Answer A"
+                    android:background="@drawable/button_yellow"
+                    android:id="@+id/answerAbtn"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:text="Answer B"
+                    android:background="@drawable/button_red"
+                    android:id="@+id/answerBbtn"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:text="Answer C"
+                    android:background="@drawable/button_orange"
+                    android:id="@+id/answerCbtn"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:text="Answer D"
+                    android:background="@drawable/button_green"
+                    android:id="@+id/answerDbtn"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:text="answer E"
+                    android:background="@drawable/button_blue"
+                    android:id="@+id/answerEbtn"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>

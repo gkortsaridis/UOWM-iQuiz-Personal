@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/carbon"
+    tools:context="gr.gkortsaridis.iquizpersonal.EndquizActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/tick"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="20dp"
+            android:text="Your score : XXX"
+            android:textColor="#ffffff"
+            android:id="@+id/theScoreTxt"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="20dp"
+            android:text="Your time : XX/YY"
+            android:textColor="#ffffff"
+            android:id="@+id/theTimeTxt"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/button_red"
+            android:text="Main Menu"
+            android:id="@+id/backBtn"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="backToMainMenu"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/button_red"
+            android:text="Quit Game"
+            android:id="@+id/quitBtn"
+            android:onClick="quitgame"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
